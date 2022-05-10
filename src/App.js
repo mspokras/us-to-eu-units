@@ -52,7 +52,7 @@ class UnitInput extends Component {
       return (
         <div className='inputLabel'>
           <input value={distance} onChange={this.handleChange} />
-          { scale === 'm' ? <img src={usa} /> : <img src={eu} /> }
+          { scale === 'm' ? <img src={usa} alt='usa' /> : <img src={eu} alt='eu' /> }
           <label>{distanceNames[scale]}</label>
         </div>
       )
@@ -61,7 +61,7 @@ class UnitInput extends Component {
       return (
         <div className='inputLabel'>
           <input value={height} onChange={this.handleChange} />
-          { scale === 'f' ? <img src={usa} /> : <img src={eu} /> }
+          { scale === 'f' ? <img src={usa} alt='usa' /> : <img src={eu} alt='usa' /> }
           <label>{heightNames[scale]}</label>
         </div>
       )
